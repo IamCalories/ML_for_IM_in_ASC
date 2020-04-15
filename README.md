@@ -98,7 +98,7 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 >>>   |179|241|
 >>>   |482|245|
 
->- APC + RL:  
+>> - APC + RL:  
 >>>   | time (s) | capacity (Mbps) |  
 >>>   | :-: | :-: |
 >>>   |3|240|

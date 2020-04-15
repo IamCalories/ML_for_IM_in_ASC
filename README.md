@@ -83,26 +83,26 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 - If we use APC algorithm, the capacity is 240 Mbps in average and it spends 1.4s to calculate the result.  
 - If we use RL, the capacity depends on how mauch time it spends, and so is APC+RL.  
 > - RL: 
-  | time (s) | capacity (Mbps) |  
-  | :-: | :-: |
-  |9|227|
-  |19|230|
-  |36|234|
-  |71|236|
-  |179|241|
-  |482|245|
+   | time (s) | capacity (Mbps) |  
+   | :-: | :-: |
+   |9|227|
+   |19|230|
+   |36|234|
+   |71|236|
+   |179|241|
+   |482|245|
 
 > - APC + RL:  
-  | time (s) | capacity (Mbps) |  
-  | :-: | :-: |
-  |3|240|
-  |9|245|
-  |17|245|
-  |43|249|
-  |131|250|
-  |333|251|
-  |1030|252|
-  |2147|253|  
+   | time (s) | capacity (Mbps) |  
+   | :-: | :-: |
+   |3|240|
+   |9|245|
+   |17|245|
+   |43|249|
+   |131|250|
+   |333|251|
+   |1030|252|
+   |2147|253|  
 
 ---
 

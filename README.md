@@ -1,10 +1,13 @@
 # ML_for_IM_in_ASC
 Matlab code for Interference Management in Aerial Small Cells
-  
+---  
+
 ## Our System Architecture  
 > - In our system, we assume that there are 12 BSs and 60 UEs.  
 > - Each BS serves 5 UEs [all the time]. We assume that 5 UEs(it is seemed as 1 group) will always go toward the same direction. Also, that BS will be in the center of each group.  
 > - If there is any two BSs getting closer to each other and hence cause servere interference. We will determine to close one of them. In other words, there will be only one BS to serve these 10 UEs(2 group). But the closed BS is still in the center of the original group.   
+
+---  
 
 ## Start from the main.m
 In the main.m, we compare four methods: 
@@ -13,6 +16,7 @@ In the main.m, we compare four methods:
 3. RL (Reinforcement Learning): build q-table to find the optimal solution. (we train the model first(offline learning)) 
 4. APC + RL: we use APC to decide BS on/off, and use RL to decide the power of "on" BS (we have differnent power level) 
 
+---  
 
 ## RL:  
 ### Training:
@@ -53,3 +57,8 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 #### reward:  
 > - Since we want to find the optimal state which can maximize the SINR, we set the reward proportional to the SINR. The larger the SINR, the more likely being choosen in the next time.  
 
+---  
+
+## Simulation Result:  
+- If we don't control the power level, all BSs are on. The total capacity is 223 Mbps.  
+--  

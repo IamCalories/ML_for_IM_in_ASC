@@ -34,9 +34,9 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 #### action:  
 > - action_list = 1 : group x power_level, where group number is 12.
 > - According to the power_level of our system.(power_parameter.m.)  
-> If the power level = 2, it means that there are two power level on(1W) and off(0W).  
+> ex: If the power level = 2, it means that there are two power level on (1W) and off (0W).  
 > * the action_list will be 1:24, where 1:12 is to change one of the BS to off, and 13:24 is to change one of the BS to on.
-> If the power level = 3, it means that there are three power level on(1W), half on(0.5W), and off(0W).  
+> ex: If the power level = 3, it means that there are three power level on (1W), half on (0.5W), and off (0W).  
 > * the action_list will be 1:36, where 1:12 is to change one of the BS to off, 13:24 is to change one of the BS to half on,and 25:36 is to change one of the BS to on.
 
 

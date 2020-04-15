@@ -13,8 +13,10 @@ In the main.m, we compare four methods:
 ## System_parameter: 
 
 ## RL: 
-Our objective is to "maximize the SINR". 
-<img src="http://latex.codecogs.com/gif.latex?\frac{RSRP_signal}{RSRP_interference+Noise}" />
+Our objective is to "maximize the SINR".  
+
+<img src="http://latex.codecogs.com/gif.latex?SINR = \frac{RSRP signal}{RSRP interference + Noise}" />
+
 state: 
 action: 
 reward:  

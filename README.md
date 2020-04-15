@@ -41,8 +41,10 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 
 
 #### reward:  
+> - Since we want to find the optimal state which can maximize the SINR, we set the reward proportional to the SINR. The larger the SINR, the more likely being choosen in the next time.  
+
  
-### Training: 
+### Training:
 1. Choose action 
 2. Update state 
 3. RL_learn

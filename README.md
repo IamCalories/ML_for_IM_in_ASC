@@ -33,7 +33,7 @@ In the main.m, we compare four methods:
  
 1. RSRP (Reference Symbol Received Power) is "the signal strength" that UE received from the downlink reference signal.    
 > - In our project, in every single time, UE will send RSRP which it received in the last time back to the BS.    
-> - Each UE chooses "the strongeset strengest signal" among every BS(in our system: 12 BSs) to be the BS who serves it.  
+> - Each UE chooses "the strongeset strengest signal" among all BS (in our system: 12 BSs) to be the BS who serves it.  
 We called that strongeset strengest signal "signal RSRP". Otherwise, "interference RSRP".  
  
 #### state:   

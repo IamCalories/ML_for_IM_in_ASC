@@ -19,7 +19,7 @@ In the main.m, we compare four methods:
 
 ---  
 
-## RL:  
+## RL  
 ### Training:
 > 1. Choose the action. (choose_action.m) 
 > 2. According to the action we choose, we update the state. (update_state.m)
@@ -60,7 +60,7 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 
 ---  
 
-## Simulation Result:  
+## Simulation Result  
 
 1. Consider power level = 1 [on] 
 - If we don't control the power level, all BSs are on. The capacity is 223 Mbps in average.  

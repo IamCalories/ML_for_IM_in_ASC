@@ -107,7 +107,7 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 ---
 
 ## Conclusion in my opinion  
-1. In power-level=2,   
+1. In power level=2,   
 - If we set the optimal solution (exhaustive method) to 100% [capacity from 223 to 256], then using APC can achieve 50% [capacity from 223 to 240]. However, APC only takes 10% of the time comparing to exhaustive method. 
 
 2. We use q-table to store the state-action transition probability. Therefore, the larger the power level, the larger the number of state-list and q-table size.  

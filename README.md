@@ -12,7 +12,9 @@ In the main.m, we compare four methods:
 
 ## RL: 
 Our objective is to "maximize the SINR".  
-  <img align="center" src="http://latex.codecogs.com/gif.latex? SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />
+
+>>>>>  <img align="center" src="http://latex.codecogs.com/gif.latex? SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />  
+
  
 1. RSRP(Reference Symbol Received Power) is the signal strength that UE received from the downlink reference signal.  
 > - It can represent "the signal strength" from the BS.   

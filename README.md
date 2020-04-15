@@ -60,5 +60,29 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 ---  
 
 ## Simulation Result:  
-- If we don't control the power level, all BSs are on. The total capacity is 223 Mbps.  
---  
+1. Consider power level = 2 [off, on]   
+- If we don't control the power level, all BSs are on. The capacity is 223 Mbps in average.  
+- If we use exhaustive, the capacity is 258 Mbps in average, and it spends 2384s to calculate the result.  
+- If we use APC algorithm, the capacity is 240 Mbps in average and it spends 1.5s to calculate the result.  
+- If we use RL, the capacity depends on how many times it spends.  
+|time(s)|capacity(Mbps)|  
+|2.5    |230           |
+
+> - If we set the optimal solution (exhaustive method) to 100% [capacity from 223 to 258], then using APC can achieve 50% [capacity from 223 to 240]. 
+
+2. Consider power level = 3 [off, half on, on]   
+- If we don't control the power level, all BSs are on. The capacity is 223 Mbps in average.  
+- If we use exhaustive, the capacity is 258 Mbps in average, and it spends 2384s to calculate the result.  
+- If we use APC algorithm, the capacity is 240 Mbps in average and it spends 1.5s to calculate the result.  
+- If we use RL, the capacity depends on how many times it spends, and so is APC+RL.  
+
+> - If we set the optimal solution (exhaustive method) to 100% [capacity from 223 to 258], then using APC can achieve 50% [capacity from 223 to 240].  
+
+3. We use q-table to store the state-action transition probability. Therefore, the larger the power level, the larger the number of state-list and q-table size.  
+
+(Is it necessary to have many power level ????)
+> - We can observe from the exhaustive method that if we increase the number of power level from 0 to 1 (all on to off/on), we can increase 35 Mbps. However, if we increase the number of power level from 1 to 2 (off/on to off/0.5on/on), we can only increase 2 Mbps.
+> - Since we need to find the state in the larger state-list in power level=3 than power-level = 2, it will spend more time but doesn't get benefits.
+
+
+

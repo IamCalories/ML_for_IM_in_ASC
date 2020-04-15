@@ -12,7 +12,9 @@ In the main.m, we compare four methods:
 
 ## RL: 
 Our objective is to "maximize the SINR".  
-<img align="text-align:center" src="http://latex.codecogs.com/gif.latex?SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />
+<p align="center">
+  <img align="text-align:center" src="http://latex.codecogs.com/gif.latex?SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />
+</p>
 
 state:   
 action:  

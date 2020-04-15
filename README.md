@@ -14,10 +14,7 @@ In the main.m, we compare four methods:
 
 ## RL: 
 Our objective is to "maximize the SINR". 
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-$$
-SINR = \frac{RSRP_signal}{RSRP_interference+Noise}
-$$
+<img src="http://latex.codecogs.com/gif.latex?\frac{RSRP_signal}{RSRP_interference+Noise}" />
 state: 
 action: 
 reward:  

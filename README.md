@@ -121,11 +121,12 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
   >>>   | exhaustive |11/11 = 1|(256-223)/(256-223) = 100%|
   >>>   | APC |1.4/11 = 0.1|(240-223)/(256-223) = 50%|
 
-2. Compare different power level ...
->- We use q-table to store the state-action transition probability. Therefore, the larger the power level, the larger the number of state-list and q-table size.  
+2. Compare different power level ... (Is it necessary to have many power level ????)
 
-(Is it necessary to have many power level ????)
-> - We can observe from the exhaustive method that if we increase the number of power level from 0 to 1 (all on to off/on), we can increase 35 Mbps. However, if we increase the number of power level from 1 to 2 (off/on to off/0.5on/on), we can only increase 2 Mbps.  
+> (1). We use q-table to store the state-action transition probability. Therefore, the larger the power level, the larger the number of state-list and q-table size. Compare the RL result shown above, powerlevel=3 spends more time but doesn't get benefits.  
+
+
+> (2). We can observe from the exhaustive method that if we increase the number of power level from 0 to 1 (all on to off/on), we can increase 35 Mbps. However, if we increase the number of power level from 1 to 2 (off/on to off/0.5on/on), we can only increase 2 Mbps.  
 
   >>>   | power level  | Capacity (Mbps) | 
   >>>   | :-: | :-: |
@@ -133,7 +134,6 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
   >>>   |1 [on/off]|256|
   >>>   |2 [on/halfon/on]|258|
 
-> - Since we need to find the state in the larger state-list in power level=3 than power-level = 2, it will spend more time but doesn't get benefits.  
 
 3. There is an upper bound when we use APC + RL
 

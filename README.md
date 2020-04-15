@@ -25,6 +25,7 @@ In the main.m, we compare four methods:
 > 1. Choose the action. (choose_action.m) 
 > 2. According to the action we choose, we update the state. (update_state.m)  
 
+### Details:  
 
 #### Our objective is to "maximize the SINR".  
 
@@ -53,8 +54,3 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 #### reward:  
 > - Since we want to find the optimal state which can maximize the SINR, we set the reward proportional to the SINR. The larger the SINR, the more likely being choosen in the next time.  
 
- 
-
-
-
-## choose action 

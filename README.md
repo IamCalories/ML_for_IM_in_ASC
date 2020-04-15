@@ -26,7 +26,7 @@ In the main.m, we compare four methods:
 
 ### Details:  
 
-#### Our objective is to "maximize the SINR".  
+  #### Our objective is to "maximize the SINR".  
 
 >>>>>  <img align="center" src="http://latex.codecogs.com/gif.latex? SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />  
 
@@ -36,12 +36,12 @@ In the main.m, we compare four methods:
 > - Each UE chooses "the strongeset strengest signal" among all BS (in our system: 12 BSs) to be the BS who serves it.  
 We called that strongeset strengest signal "signal RSRP". Otherwise, "interference RSRP".  
  
-#### state:   
+  #### state:   
 > - Since our objective is to maximize the SINR, where SINR is proportion to the RSRP received by UE. Also, RSRP is propotion to the distance between BS and UE and the transmission power transmitting from the BS. Therefore, we have two parameters in our state. The first one is all the locations of BS in our system. The second one is the transmission power of each BS.  
 > - state = [the location of BS(12), the transmission power of BS(12)]  
 > - We use state_list to store the state which has shown.
 
-#### action:  
+  #### action:  
 > - action_list = 1 : group x power_level, where group number is 12.
 > - According to the power_level of our system.(in file power_parameter.m.)  
 > - ex: If the power level = 2, it means that there are two power level on (1W) and off (0W).  

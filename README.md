@@ -45,9 +45,13 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 
  
 ### Training:
-1. Choose action 
-2. Update state 
-3. RL_learn
+> 1. Choose the action. (choose_action.m) 
+> 2. According to the action we choose, we update the state. (update_state.m)
+> 3. Update the q_table. (RL_learn.m)  
 
- 
+### Testing:  
+> 1. Choose the action. (choose_action.m) 
+> 2. According to the action we choose, we update the state. (update_state.m)
+
+
 ## choose action 

@@ -8,11 +8,11 @@ In the main.m, we compare four methods:
 3. RL (Reinforcement Learning): build q-table to find the optimal solution. (we train the model first(offline learning)) 
 4. APC + RL: we use APC to decide BS on/off, and use RL to decide the power of "on" BS (we have differnent power level) 
 
-## system_parameter: 
+## System_parameter: 
 
 ## RL: 
 Our objective is to "maximize the SINR". 
-SINR = \frac{RSRP_signal}{RSRP_interference+Noise}
+$$SINR = \frac{RSRP_signal}{RSRP_interference+Noise}$$
 state: 
 action: 
 reward:  

@@ -1,5 +1,3 @@
-
-
 # ML_for_IM_in_ASC
 Matlab code for Interference Management in Aerial Small Cells
 
@@ -14,8 +12,9 @@ In the main.m, we compare four methods:
 
 ## RL: 
 Our objective is to "maximize the SINR".  
-|<img src="http://latex.codecogs.com/gif.latex?SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />|
-
+<div style="text-align:center">
+<img src="http://latex.codecogs.com/gif.latex?SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />
+</div>
 
 state:   
 action:  

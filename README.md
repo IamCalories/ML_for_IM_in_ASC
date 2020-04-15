@@ -14,11 +14,11 @@ In the main.m, we compare four methods:
 
 ## RL: 
 Our objective is to "maximize the SINR".  
+<img src="http://latex.codecogs.com/gif.latex?SINR = \frac{RSRP _signal}{RSRP _interference + Noise}" />  
 
-<img src="http://latex.codecogs.com/gif.latex?SINR = \frac{RSRP signal}{RSRP interference + Noise}" />
 
-state: 
-action: 
+state:   
+action:  
 reward:  
  
 ### Training: 

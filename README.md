@@ -68,10 +68,10 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
   
 2. Consider power level = 2 [off, on]  
 > - Using three methods
-> - If we use **exhaustive**, the capacity is **256 Mbps** in average, and it spends **11s** to calculate the result.  
-> - If we use **APC**, the capacity is **240 Mbps** in average and it spends **1.4s** to calculate the result.  
-> - If we use **RL**, the capacity depends on how much time it spends.  
-> - RL:  
+>> - If we use **exhaustive**, the capacity is **256 Mbps** in average, and it spends **11s** to calculate the result.  
+>> - If we use **APC**, the capacity is **240 Mbps** in average and it spends **1.4s** to calculate the result.  
+>> - If we use **RL**, the capacity depends on how much time it spends.  
+>> - RL:  
 
 >>>  | time (s) | capacity (Mbps) |  
 >>>  | :-: | :-: |
@@ -85,10 +85,10 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
   
 3. Consider power level = 3 [off, half on, on]   
 > - Using four methods  
-> - If we use **exhaustive**, the capacity is **258 Mbps** in average, and it spends **1284s** to calculate the result.  
-> - If we use **APC**, the capacity is **240 Mbps** in average and it spends **1.4s** to calculate the result.  
-> - If we use **RL**, the capacity depends on how mauch time it spends, and so is **APC+RL**.  
-> - RL: 
+>> - If we use **exhaustive**, the capacity is **258 Mbps** in average, and it spends **1284s** to calculate the result.  
+>> - If we use **APC**, the capacity is **240 Mbps** in average and it spends **1.4s** to calculate the result.  
+>> - If we use **RL**, the capacity depends on how mauch time it spends, and so is **APC+RL**.  
+>> - RL: 
 >>>   | time (s) | capacity (Mbps) |  
 >>>   | :-: | :-: |
 >>>   |9|227|

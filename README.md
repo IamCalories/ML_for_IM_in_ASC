@@ -27,9 +27,19 @@ In the main.m, we compare four methods:
 We called that strongeset strengest signal "signal RSRP". Otherwise, "interference RSRP".  
  
 #### state:   
-> Since our objective is to maximize the SINR, SINR is proportion to the RSRP reseived by UE. RSRP is propotion to the distance between BS and UE and the transmission power transmits from the BS. Therefore, we have two parameters in out state. The first one is all the locations of BS in our system. The second one is the transmission power of each BS.  
+> - Since our objective is to maximize the SINR, where SINR is proportion to the RSRP received by UE. Also, RSRP is propotion to the distance between BS and UE and the transmission power transmitting from the BS. Therefore, we have two parameters in our state. The first one is all the locations of BS in our system. The second one is the transmission power of each BS.  
+> - state = [the location of BS(12), the transmission power of BS(12)]  
+> - We use state_list to store the state which has shown.
 
 #### action:  
+> - action_list = 1 : group x power_level, where group number is 12.
+> - According to the power_level of our system.(power_parameter.m.)  
+> If the power level = 2, it means that there are two power level on(1W) and off(0W).  
+> *the action_list will be 1:24, where 1:12 is to change one of the BS to off, and 13:24 is to change one of the BS to on.
+> If the power level = 3, it means that there are three power level on(1W), half on(0.5W), and off(0W).  
+> *the action_list will be 1:36, where 1:12 is to change one of the BS to off, 1:12 is to change one of the BS to half on,and 13:24 is to change one of the BS to on.
+
+
 #### reward:  
  
 ### Training: 

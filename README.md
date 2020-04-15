@@ -60,10 +60,12 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 
 ---  
 
-## Simulation Result: 
+## Simulation Result:  
+
 1. Consider power level = 1 [on] 
 - If we don't control the power level, all BSs are on. The capacity is 223 Mbps in average.  
 
+  
 2. Consider power level = 2 [off, on]     
 - If we use exhaustive, the capacity is 256 Mbps in average, and it spends 11s to calculate the result.  
 - If we use APC algorithm, the capacity is 240 Mbps in average and it spends 1.4s to calculate the result.  
@@ -77,7 +79,8 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
   |25|241|
   |71|244|
   |186|249|
-
+  
+  
 3. Consider power level = 3 [off, half on, on]   
 - If we don't control the power level, all BSs are on. The capacity is 223 Mbps in average.  
 - If we use exhaustive, the capacity is 258 Mbps in average, and it spends 1284s to calculate the result.  

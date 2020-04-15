@@ -123,10 +123,10 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 
 2. Compare different power level ... (Is it necessary to have many power level ????)
 
-  >> (1). We use q-table to store the state-action transition probability. Therefore, the larger the power level, the larger the number of state-list and q-table size. Compare the RL result shown above, powerlevel=3 spends more time but doesn't get benefits.  
+  >  (1).  We use q-table to store the state-action transition probability. Therefore, the larger the power level, the larger the number of state-list and q-table size. Compare the RL result shown above, powerlevel=3 spends more time but doesn't get benefits.  
 
 
-  >> (2). We can observe from the exhaustive method that if we increase the number of power level from 0 to 1 (all on to off/on), we can increase 35 Mbps. However, if we increase the number of power level from 1 to 2 (off/on to off/0.5on/on), we can only increase 2 Mbps.  
+  >  (2).  We can observe from the exhaustive method that if we increase the number of power level from 0 to 1 (all on to off/on), we can increase 35 Mbps. However, if we increase the number of power level from 1 to 2 (off/on to off/0.5on/on), we can only increase 2 Mbps.  
 
   >>>   | power level  | Capacity (Mbps) | 
   >>>   | :-: | :-: |

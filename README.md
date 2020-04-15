@@ -103,7 +103,9 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
   |333|251|
   |1030|252|
   |2147|253|  
-  
+
+---
+
 ## Conclusion in my opinion  
 1. In power-level=2,   
 - If we set the optimal solution (exhaustive method) to 100% [capacity from 223 to 256], then using APC can achieve 50% [capacity from 223 to 240]. However, APC only takes 10% of the time comparing to exhaustive method. 

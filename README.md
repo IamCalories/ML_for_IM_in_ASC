@@ -59,9 +59,11 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 
 ---  
 
-## Simulation Result:  
-1. Consider power level = 2 [off, on]   
+## Simulation Result: 
+1. Consider power level = 1 [on] 
 - If we don't control the power level, all BSs are on. The capacity is 223 Mbps in average.  
+
+2. Consider power level = 2 [off, on]     
 - If we use exhaustive, the capacity is 256 Mbps in average, and it spends 11s to calculate the result.  
 - If we use APC algorithm, the capacity is 240 Mbps in average and it spends 1.4s to calculate the result.  
 - If we use RL, the capacity depends on how much time it spends.  
@@ -75,9 +77,9 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
   |71|244|
   |186|249|
 
-2. Consider power level = 3 [off, half on, on]   
+3. Consider power level = 3 [off, half on, on]   
 - If we don't control the power level, all BSs are on. The capacity is 223 Mbps in average.  
-- If we use exhaustive, the capacity is 258 Mbps in average, and it spends 2384s to calculate the result.  
+- If we use exhaustive, the capacity is 258 Mbps in average, and it spends 1284s to calculate the result.  
 - If we use APC algorithm, the capacity is 240 Mbps in average and it spends 1.4s to calculate the result.  
 - If we use RL, the capacity depends on how mauch time it spends, and so is APC+RL.  
 - RL: 
@@ -102,16 +104,17 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
   |1030|252|
   |2147|253|  
   
+## Conclusion in my opinion  
+1. In power-level=2,   
+- If we set the optimal solution (exhaustive method) to 100% [capacity from 223 to 256], then using APC can achieve 50% [capacity from 223 to 240]. However, APC only takes 10% of the time comparing to exhaustive method. 
 
-3.  If we set the optimal solution (exhaustive method) to 100% [capacity from 223 to 258], then using APC can achieve 50% [capacity from 223 to 240].  
-
-4. We use q-table to store the state-action transition probability. Therefore, the larger the power level, the larger the number of state-list and q-table size.  
+2. We use q-table to store the state-action transition probability. Therefore, the larger the power level, the larger the number of state-list and q-table size.  
 
 (Is it necessary to have many power level ????)
 > - We can observe from the exhaustive method that if we increase the number of power level from 0 to 1 (all on to off/on), we can increase 35 Mbps. However, if we increase the number of power level from 1 to 2 (off/on to off/0.5on/on), we can only increase 2 Mbps.
 > - Since we need to find the state in the larger state-list in power level=3 than power-level = 2, it will spend more time but doesn't get benefits.  
 
-5. There is an upper bound when we use APC + RL
+3. There is an upper bound when we use APC + RL
 
 
 

@@ -16,7 +16,7 @@ In the main.m, we compare four methods:
 ## System_parameter: 
 
 ## RL: 
-### Our objective is to "maximize the SINR".  
+#### Our objective is to "maximize the SINR".  
 
 >>>>>  <img align="center" src="http://latex.codecogs.com/gif.latex? SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />  
 
@@ -26,9 +26,10 @@ In the main.m, we compare four methods:
 > - Each UE chooses "the strongeset strengest signal" among every BS(in our system: 12 BSs) to be the BS who serves it.  
 We called that strongeset strengest signal "signal RSRP". Otherwise, "interference RSRP".  
  
-### state:   
-### action:  
-### reward:  
+#### state:   
+> Because our objective is
+#### action:  
+#### reward:  
  
 ### Training: 
 1. Choose action 

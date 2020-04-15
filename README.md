@@ -16,9 +16,9 @@ Our objective is to "maximize the SINR".
 <p align="center">
   <img src="http://latex.codecogs.com/gif.latex? SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />
 </p>  
-1. RSRP(Reference Symbol Received Power) is the signal strength that UE received from the downlink reference signal. 
-  * It can represent "the signal strength" from the BS.  
-  * In our project, in every single time, UE will send RSRP which it received in the last time back to the BS.  
+1. RSRP(Reference Symbol Received Power) is the signal strength that UE received from the downlink reference signal.  
+  * It can represent "the signal strength" from the BS.   
+  * In our project, in every single time, UE will send RSRP which it received in the last time back to the BS.    
 2. In our system, we assume that there are 12 BSs and 60 UEs.  
   * Each BS serves 5 UEs [all the time]. Because we assume that 5 UEs(it is seemed as 1 group) will always go toward the same direction. Also, that BS will be in the center of each group.  
 3. If there is any two BSs getting closer to each other and hence cause servere interference. We will determine to close one of them. In other words, there will be only one BS to serve these 10 UEs(2 group). But the closed BS is still in the center of the original group.  

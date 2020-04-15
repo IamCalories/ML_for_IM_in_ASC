@@ -15,7 +15,17 @@ In the main.m, we compare four methods:
 
 ## System_parameter: 
 
-## RL: 
+## RL:  
+### Training:
+> 1. Choose the action. (choose_action.m) 
+> 2. According to the action we choose, we update the state. (update_state.m)
+> 3. Update the q_table. (RL_learn.m)  
+
+### Testing:  
+> 1. Choose the action. (choose_action.m) 
+> 2. According to the action we choose, we update the state. (update_state.m)  
+
+
 #### Our objective is to "maximize the SINR".  
 
 >>>>>  <img align="center" src="http://latex.codecogs.com/gif.latex? SINR = \frac{signalRSRP}{interferenceRSRP + Noise}" />  
@@ -44,14 +54,7 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 > - Since we want to find the optimal state which can maximize the SINR, we set the reward proportional to the SINR. The larger the SINR, the more likely being choosen in the next time.  
 
  
-### Training:
-> 1. Choose the action. (choose_action.m) 
-> 2. According to the action we choose, we update the state. (update_state.m)
-> 3. Update the q_table. (RL_learn.m)  
 
-### Testing:  
-> 1. Choose the action. (choose_action.m) 
-> 2. According to the action we choose, we update the state. (update_state.m)
 
 
 ## choose action 

@@ -150,7 +150,7 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 - Is the upper bound correct or not ?  
 
 <p align="center">
-<img src="https://github.com/IamCalories/ML_for_IM_in_ASC/blob/master/pic1.png" width="30%" height="30%">
+<img src="https://github.com/IamCalories/ML_for_IM_in_ASC/blob/master/pic1.png" width="50%" height="50%">
 </p> 
 
 3. Using APC to control inter-cell interference and using RL to control intra-cell interference.  

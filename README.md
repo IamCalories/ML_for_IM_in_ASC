@@ -142,8 +142,8 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 
 ## Feedback from prof. Wang  (2020.04.16)
 1. Our scenario is not complex enough that RL will saturate. Try complex scenario.  
-- Why "RL saturate" ? Increase self throughtput will interfer with others.  
 - Study paper https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8868117 to see the different.  
+- "RL saturate" ? Increase self throughtput will interfer with others.  
 
 2. The paper mentioned above have some questions  
 - Prove that DRL actually can achieve the upper bound.

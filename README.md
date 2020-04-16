@@ -146,7 +146,7 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 - "RL saturate" ? Increase self throughtput will interfer with others.  
 
 2. The paper mentioned above have some questions  
-- Prove that DRL actually can achieve the upper bound.
+- Prove that DRL is actually close to the upper bound.
 - Is the upper bound correct or not ?  
 
 <p align="center">

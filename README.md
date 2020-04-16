@@ -8,7 +8,7 @@
 > - Each BS serves 5 UEs [all the time]. We assume that 5 UEs(it is seemed as 1 group) will always go toward the same direction. Also, that BS will be in the center of each group.  
 > - If there is any two BSs getting closer to each other and hence cause servere interference. We will determine to close one of them. In other words, there will be only one BS to serve these 10 UEs(2 group). But the closed BS is still in the center of the original group.   
 
-![image](https://github.com/IamCalories/ML_for_IM_in_ASC/blob/master/sr1.png){:height="30%" width="30%"}  
+![image](https://github.com/IamCalories/ML_for_IM_in_ASC/blob/master/sr1.png =100x100) 
 
 ---  
 

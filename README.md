@@ -140,6 +140,8 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 
 3. There is an upper bound when we use APC + RL
 
+--- 
+
 ## Feedback from prof. Wang  (2020.04.16)
 1. Our scenario is not complex enough that RL will saturate. Try complex scenario.  
 - Study paper https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8868117 to see the different.  

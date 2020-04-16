@@ -141,8 +141,16 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 3. There is an upper bound when we use APC + RL
 
 ## Feedback from prof. Wang  (2020.04.16)
-1. Our scenario is not complex enough that RL won't saturate. Try complex scenario. 
-- Study paper https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8868117 to see the different.
-2. The paper mentioned above have some questions  
-- 
+1. Our scenario is not complex enough that RL will saturate. Try complex scenario.  
+- Why "RL saturate" ? Increase self throughtput will interfer with others.  
+- Study paper https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8868117 to see the different.  
 
+2. The paper mentioned above have some questions  
+- Prove that DRL actually can achieve the upper bound.
+- Is the upper bound correct or not ?  
+
+<p align="center">
+<img src="https://github.com/IamCalories/ML_for_IM_in_ASC/blob/master/pic1.png" width="30%" height="30%">
+</p> 
+
+3. Using APC to control inter-cell interference and using RL to control intra-cell interference.  

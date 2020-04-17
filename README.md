@@ -123,8 +123,8 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 >>>   |99|415|
 >>>   |162|418|
 >>>   |228|420|  
->>>   |309|421|
->>>   |||
+>>>   |309|420.5|
+>>>   |384|420.5|
 >>>   |||
 >>>   |||
 >>>   |||

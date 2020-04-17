@@ -72,47 +72,63 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
   
 2. Consider power level = 2 [off, on]  
 > - Using three methods
->> - If we use **exhaustive**, the capacity is **256 Mbps** in average, and it spends **11s** to calculate the result.  
->> - If we use **APC**, the capacity is **240 Mbps** in average and it spends **1.4s** to calculate the result.  
+>> - If we use **exhaustive**, the capacity is **441 Mbps** in average, and it spends **11s** to calculate the result.  
+>> - If we use **APC**, the capacity is **400 Mbps** in average and it spends **1.2s** to calculate the result.  
 >> - If we use **RL**, the capacity depends on how much time it spends.  
 >> - RL:  
 
 >>>  | time (s) | capacity (Mbps) |  
 >>>  | :-: | :-: |
->>>  |2.5|230|
->>>  |5.74|233|
->>>  |11|236|
->>>  |25|241|
->>>  |71|244|
->>>  |186|249|
+>>>  |2.2|361|
+>>>  |5.4|369|
+>>>  |9.1|374|
+>>>  |21|389|
+>>>  |48|396|
+>>>  |68|402|
+>>>  |122|406|
+>>>  |181|411|
+>>>  |237|412|
   
   
 3. Consider power level = 3 [off, half on, on]   
 > - Using four methods  
->> - If we use **exhaustive**, the capacity is **258 Mbps** in average, and it spends **1284s** to calculate the result.  
->> - If we use **APC**, the capacity is **240 Mbps** in average and it spends **1.4s** to calculate the result.  
+>> - If we use **exhaustive**, the capacity is **453 Mbps** in average, and it spends **1273s** to calculate the result.  
+>> - If we use **APC**, the capacity is **400 Mbps** in average and it spends **1.2s** to calculate the result.  
 >> - If we use **RL**, the capacity depends on how mauch time it spends, and so is **APC+RL**.  
 >> - RL: 
 >>>   | time (s) | capacity (Mbps) |  
 >>>   | :-: | :-: |
->>>   |9|227|
->>>   |19|230|
->>>   |36|234|
->>>   |71|236|
->>>   |179|241|
->>>   |482|245|
+>>>   |3.9|364|
+>>>   |19|373|
+>>>   |31|378|
+>>>   |87|389|
+>>>   |90|402|
+>>>   |||
+>>>   |||
+>>>   |||
+>>>   |||
+>>>   |||
+>>>   |||
+>>>   |||
+>>>   |||
+>>>   |||
 
 >> - APC + RL:  
 >>>   | time (s) | capacity (Mbps) |  
 >>>   | :-: | :-: |
->>>   |3|240|
->>>   |9|245|
->>>   |17|245|
->>>   |43|249|
->>>   |131|250|
->>>   |333|251|
->>>   |1030|252|
->>>   |2147|253|  
+>>>   |4.5|408|
+>>>   |19|408|
+>>>   |35|409|
+>>>   |85|415|
+>>>   |99|415|
+>>>   |162|418|
+>>>   |228|420|  
+>>>   |||
+>>>   |||
+>>>   |||
+>>>   |||
+>>>   |||
+>>>   |||
 
 ---
 

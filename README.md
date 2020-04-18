@@ -67,7 +67,7 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 ## Simulation Result  
 
 1. Consider power level = 1 [on] 
-> - If we don't control the power level, **all BSs turn on**. The capacity is **223 Mbps** in average.  
+> - If we don't control the power level, **all BSs turn on**. The capacity is **346.6 Mbps** in average.  
 
   
 2. Consider power level = 2 [off, on]  
@@ -250,25 +250,20 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 
 ## Conclusion in my opinion  
 1. In power level=2,   
-> - If we set the optimal solution (exhaustive method) to 100% [capacity from 223 to 256], then using APC can achieve 50% [capacity from 223 to 240]. However, APC only takes 10% of the time comparing to exhaustive method.  
+> - If we set the optimal solution (exhaustive method) to 100% [capacity from 346.6 to 441], then using APC can achieve 56.5% [capacity from 346.6 to 400]. However, APC only takes 10% of the time comparing to exhaustive method.  
 
   >>>   | Method | Time  | Capacity (Mbps) | 
   >>>   | :-: | :-: | :-: |
-  >>>   | exhaustive |11/11 = 1|(256-223)/(256-223) = 100%|
-  >>>   | APC |1.4/11 = 0.1|(240-223)/(256-223) = 50%|
+  >>>   | exhaustive |11/11 = 1|(441-346.6)/(441-346.6) = 100%|
+  >>>   | APC |1.2/11 = 0.1|(400-346.6)/(441-346.6) = 56.5%|
 
-2. Compare different power level ... (Is it necessary to have many power level ????)
-
+2. Compare different power level
   > - We use q-table to store the state-action transition probability. Therefore, the larger the power level, the larger the number of state-list and q-table size. Compare the RL result shown above, powerlevel=3 spends more time but doesn't get benefits.  
     
-  > - We can observe from the exhaustive method that if we increase the number of power level from 0 to 1 (all on to off/on), we can increase 35 Mbps. However, if we increase the number of power level from 1 to 2 (off/on to off/0.5on/on), we can only increase 2 Mbps.  
+  > - We can observe from the exhaustive method that if we increase the number of power level from 0 to 1 (all on to off/on), we can increase 94.9 Mbps. However, if we increase the number of power level from 1 to 2 (off/on to off/0.5on/on), we can only increase 12 Mbps.  
 
   >>>   | power level  | Capacity (Mbps) | 
   >>>   | :-: | :-: |
-  >>>   |0 [all on]|223|
-  >>>   |1 [on/off]|256|
-  >>>   |2 [on/halfon/on]|258|
-
-
-3. There is an upper bound when we use APC + RL
-
+  >>>   |0 [all on]|346.6|
+  >>>   |1 [on/off]|441|
+  >>>   |2 [on/halfon/on]|453|

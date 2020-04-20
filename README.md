@@ -245,6 +245,8 @@ We called that strongeset strengest signal "signal RSRP". Otherwise, "interferen
 >>>   |920.2|430.2|
 
 
+3. Consider power level = 4 [off, 0.33on, 0.66on, on]
+>> - If we use **exhaustive**, the capacity is **458.6 Mbps** in average, and it spends **38512s** to calculate the result.  
 
 ---
 
